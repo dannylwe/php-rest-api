@@ -3,7 +3,8 @@
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
-include_once '../../config/Database.php';
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+include($document_root.'/php_rest/config/Databse.php');
 include_once '../../models/Post.php';
 
 // instantiate DB and connect
