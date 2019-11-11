@@ -125,7 +125,7 @@
         // Delete post
         public function delete() {
             // create query
-            $query = 'DELETE FROM ' . $this->table . 'WHERE id = :id';
+            $query = 'DELETE FROM posts WHERE id = :id';
 
             // Prepare statement
             $stmt = $this->conn->prepare($query);
